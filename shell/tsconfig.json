@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",                        // Compila a ES5
+    "module": "commonjs",                   // Usa CommonJS como módulo
+    "jsx": "react",                         // Soporte para JSX en React
+    "strict": true,                         // Activa todas las comprobaciones estrictas
+    "esModuleInterop": true,                // Habilita la interoperabilidad entre módulos
+    "skipLibCheck": true,                   // Omite la comprobación de tipos de los archivos de declaración
+    "forceConsistentCasingInFileNames": true,
+    "types": ["jest", "@testing-library/jest-dom"] // Fuerza la consistencia en el uso de mayúsculas y minúsculas en los nombres de archivos
+  },
+  "include": ["src/**/*"],                  // Incluye todos los archivos dentro de la carpeta src
+  "exclude": ["node_modules"]               // Excluye la carpeta node_modules
+}

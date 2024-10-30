@@ -1,0 +1,18 @@
+.navbar {
+    background-color: blue;
+    padding: 10px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-title {
+    color: white;
+}
