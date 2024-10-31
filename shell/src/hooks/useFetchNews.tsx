@@ -1,16 +1,21 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { fetchTopNews } from "../service/newsService";
 
-//Maneja la lógica de obtención de datos para cualquier 
-//página o componente que necesite cargar noticias.
-const useFetchNews= (category)=>{
-    const [news,setNews]=useState([]);
+// Define the type for category if needed, for example:
+type Category = string;
+type Article = {
+    title: string;
+    description: string;
+    url: string;
+    urlToImage: string;
+};
 
+const useFetchNews = (category: Category) => {
+    const [news, setNews] = useState<Article[]>([]);
     useEffect(() => {
         fetchTopNews(category).then(setNews);
-      }, [category]);
-
-      return news;
+    }, [category]);
+    return news;
 };
 
 export default useFetchNews;
