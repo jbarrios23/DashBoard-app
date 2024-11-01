@@ -5,7 +5,7 @@ interface SalesData {
   month: string;
   sales: number;
 }
-
+//other
 const data: SalesData[] = [
   { month: 'Enero', sales: 4000 },
   { month: 'Febrero', sales: 3000 },
