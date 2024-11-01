@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import SalesSummary from './pages/SalesSummary';
+import SalesChart from './pages/SalesChart';
+import SalesTable from './pages/SalesTable';
 
 function App() {
   const totalSales = 25000;
@@ -15,9 +17,9 @@ function App() {
         totalSales={totalSales}
         averageRevenue={averageRevenue}
         monthlyGrowth={monthlyGrowth}
-      />  {/* Resumen rápido de métricas de ventas */}
-      {/* <SalesChart />    Gráficos para ver tendencias
-    <SalesTable />    Tabla con detalles de cada venta */}
+      />
+      <SalesChart />
+      <SalesTable />
     </div>
   );
 }
